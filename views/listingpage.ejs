@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> </title>
+    <link rel="stylesheet" href="/listingpage.css">
+</head>
+<body>
+    <h1>Listing Page</h1>
+
+    <table>
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Date Of birth</th>
+            <th>Resume</th>
+        </tr>
+            <% if(students.length>0){ %>
+
+                <% for(var i=0;i<students.length;i++){ %>
+
+                    <tr>
+                        <td>
+                            <%- students[i].id %>
+                           
+
+
+                            
+                           
+                        </td>
+                        <td>
+                            <%- students[i].name %>
+                        </td>
+                        <td>
+                           
+                            <%- students[i].dateofbirth %>
+                        </td>
+                        <td>
+                          <a href="/student/download"> download</a>
+                            
+                        </td>
+                    </tr>
+
+                    <% } %>
+
+
+                <% }else { %>
+                        <h1>Students Data not Found</h1>
+                    <% } %>
+
+
+
+
+    </table>
+
+
+
+</body>
+</html>

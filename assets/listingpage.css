@@ -1,0 +1,23 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,120,121,0.9612219887955182) 13%, rgba(0,212,255,1) 100%);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+table{
+    border: 2px solid white;
+   
+}
+th{
+    border: 2px solid white;
+   
+}
+td{
+    border: 2px solid white;
+   
+}
